@@ -1,20 +1,19 @@
+using GymManager.Application.Tickets.Commands.AddTicket;
+using GymManager.Application.Tickets.Queries.GetTicketById;
 using GymManager.UI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace GymManager.UI.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        public async Task<IActionResult> Index()
         {
-            _logger = logger;
-        }
+            //var ticket = await Mediator.Send(new GetTicketByIdQuery { Id = 1 });
+            //await Mediator.Send(new AddTicketCommand { Name = "Default name" });
 
-        public IActionResult Index()
-        {
+
             return View();
         }
 
