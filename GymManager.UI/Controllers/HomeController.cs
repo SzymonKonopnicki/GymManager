@@ -1,5 +1,3 @@
-using GymManager.Application.Tickets.Commands.AddTicket;
-using GymManager.Application.Tickets.Queries.GetTicketById;
 using GymManager.UI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -8,11 +6,20 @@ namespace GymManager.UI.Controllers
 {
     public class HomeController : BaseController
     {
+        private readonly ILogger _logger;
+
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
+
         public async Task<IActionResult> Index()
         {
+            //_logger.LogInformation("LogInfo");
+            //_logger.LogError(new Exception("LogError"), null);
+
             //var ticket = await Mediator.Send(new GetTicketByIdQuery { Id = 1 });
             //await Mediator.Send(new AddTicketCommand { Name = "Default name" });
-
 
             return View();
         }
