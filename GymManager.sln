@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManager.UI", "GymManager.UI\GymManager.UI.csproj", "{D3B898F0-2056-4E03-A293-7F683059C29F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManager.UI", "GymManager.UI\GymManager.UI.csproj", "{D3B898F0-2056-4E03-A293-7F683059C29F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManager.Domain", "GymManager.Domain\GymManager.Domain.csproj", "{C5D6BD89-323E-4665-836A-0364E9782570}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManager.Domain", "GymManager.Domain\GymManager.Domain.csproj", "{C5D6BD89-323E-4665-836A-0364E9782570}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManager.Application", "GymManager.Application\GymManager.Application.csproj", "{752F288F-454A-4D5D-BCF3-83661E40BEB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManager.Application", "GymManager.Application\GymManager.Application.csproj", "{752F288F-454A-4D5D-BCF3-83661E40BEB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManager.Infrastructure", "GymManager.Infrastructure\GymManager.Infrastructure.csproj", "{1EDA6B6F-EC4B-4FC3-9CB2-2C5A893ADD3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManager.Infrastructure", "GymManager.Infrastructure\GymManager.Infrastructure.csproj", "{1EDA6B6F-EC4B-4FC3-9CB2-2C5A893ADD3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

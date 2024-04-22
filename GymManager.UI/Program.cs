@@ -1,5 +1,7 @@
 using GymManager.Application;
 using GymManager.Infrastructure;
+using GymManager.UI.Extensions;
+using Microsoft.AspNetCore.Mvc.Razor;
 using NLog.Web;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +12,8 @@ builder.Logging.AddNLogWeb();
 
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure();
+
+builder.Services.DeficeViewLocation(builder.Configuration);
 
 builder.Services.AddControllersWithViews();
 
