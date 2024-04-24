@@ -1,7 +1,7 @@
 using GymManager.Application;
 using GymManager.Infrastructure;
 using GymManager.UI.Extensions;
-using Microsoft.AspNetCore.Mvc.Razor;
+using GymManager.UI.Middlewares;
 using NLog.Web;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -26,6 +26,8 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
+
+app.UseMiddleware<ExceptionHandlerMiddleware>();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

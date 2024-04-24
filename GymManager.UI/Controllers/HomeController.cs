@@ -21,6 +21,8 @@ namespace GymManager.UI.Controllers
             //var ticket = await Mediator.Send(new GetTicketByIdQuery { Id = 1 });
             //await Mediator.Send(new AddTicketCommand { Name = "Default name" });
 
+            //throw new Exception("B³¹d kontrolera");
+
             return View();
         }
 
