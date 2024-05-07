@@ -1,3 +1,4 @@
+using GymManager.Application.Tickets.Commands.AddTicket;
 using GymManager.UI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -17,11 +18,11 @@ namespace GymManager.UI.Controllers
         {
             //_logger.LogInformation("LogInfo");
             //_logger.LogError(new Exception("LogError"), null);
-
             //var ticket = await Mediator.Send(new GetTicketByIdQuery { Id = 1 });
             //await Mediator.Send(new AddTicketCommand { Name = "Default name" });
-
             //throw new Exception("B³¹d kontrolera");
+
+            await Mediator.Send(new AddTicketCommand { Name = "Nazwa123" });
 
             return View();
         }
